@@ -7,17 +7,17 @@ public function __construct()
 	{
 		parent::__construct();
 		$this->load->helper('url','form');
-		$this->load->model('Pegawai_model');
-		$this->load->model('wisata');
-		$this->load->library('form_validation');
+		// $this->load->model('Pegawai_model');
+		// $this->load->model('wisata');
+		// $this->load->library('form_validation');
 		//$this->load->helper('url');
 		//$this->load->library('input');
-			if($this->session->userdata('logged_in')){
-			$session_data =$this->session->userdata('logged_in');
-			$data['username']=$session_data['username'];
-		}else{
-			redirect('login','refresh');
-		}
+		// 	if($this->session->userdata('logged_in')){
+		// 	$session_data =$this->session->userdata('logged_in');
+		// 	$data['username']=$session_data['username'];
+		// }else{
+		// 	redirect('login','refresh');
+		// }
 	}
 	
 	public function index(){
